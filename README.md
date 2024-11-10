@@ -17,6 +17,10 @@ Read more about this work here [http://www.grwster.com/projects/2024/tinymodel3/
 
 Plug the Tiny TRS-80 Model III into your computer's USB port, mounting its file system
 
+Install the fonts:
+
+* Copy src/fonts to the top-level dir (you can remove the ttf files if you want to save space, only the pcf files will be used on the device)
+
 Install the libraries:
 
 * Copy the Adafruit Bitmap Font library [Adafruit_CircuitPython_Bitmap_Font](https://github.com/adafruit/Adafruit_CircuitPython_Bitmap_Font/) to the lib dir
@@ -39,6 +43,12 @@ Run the BASIC demos:
 
 * Copy basicdemos-code.py to code.py in the top-level dir
 
+Get a BASIC prompt:
+
+* Copy basicprompt-code.py to code.py in the top-level dir
+
+* Connect over the USB serial cable using this guide [https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-mac-and-linux](https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-mac-and-linux)
+
 ## Running on a Mac (should also work on Linux or Windows, but you're on your own)
 
 You'll need Python 3 [https://www.python.org](https://www.python.org) and PySDL2 [https://pysdl2.readthedocs.io](https://pysdl2.readthedocs.io) installed on your computer
@@ -59,6 +69,12 @@ Run a single BASIC program:
 ```
 % cd src
 % ./runbas.sh demo1.bas
+```
+
+Get a BASIC prompt:
+```
+% cd src
+% ./run.sh basicprompt-code.py
 ```
 
 ## Requirements
