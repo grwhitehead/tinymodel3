@@ -9,7 +9,7 @@ The runtime uses the Kreative Korp TRS-80 Model III fonts [https://www.kreativek
 
 Also included is a modified version of PyBasic [https://github.com/richpl/PyBasic](https://github.com/richpl/PyBasic) with added support for TRS-80 BASIC display statements and functions.
 
-Finally, the runtime library has been ported to run over PySDL [https://pysdl2.readthedocs.io](https://pysdl2.readthedocs.io) on a regular Python installation for testing.
+Finally, the runtime library has been ported to run over PySDL2 [https://pysdl2.readthedocs.io](https://pysdl2.readthedocs.io) on a regular Python installation for testing.
 
 Read more about this work here [http://www.grwster.com/projects/2024/tinymodel3/](http://www.grwster.com/projects/2024/tinymodel3/)
 
@@ -41,7 +41,7 @@ Run the BASIC demos:
 
 ## Running on a Mac (should also work on Linux or Windows, but you're on your own)
 
-You'll need Python 3 [https://www.python.org](https://www.python.org) and PySDL [https://pysdl2.readthedocs.io](https://pysdl2.readthedocs.io) installed on your computer
+You'll need Python 3 [https://www.python.org](https://www.python.org) and PySDL2 [https://pysdl2.readthedocs.io](https://pysdl2.readthedocs.io) installed on your computer
 
 Run the python demos:
 ```
@@ -67,7 +67,7 @@ In addition to the Adafruit CircuitPython libraries pre-installed by Trevor Flow
 
 * [Adafruit_CircuitPython_Bitmap_Font](https://github.com/adafruit/Adafruit_CircuitPython_Bitmap_Font/)
 
-For testing on Mac / Linux / Windows, Python 3 and PySDL are required:
+For testing on Mac / Linux / Windows, Python 3 and PySDL2 are required:
 
 * [https://www.python.org](https://www.python.org)
 * [https://pysdl2.readthedocs.io](https://pysdl2.readthedocs.io)
