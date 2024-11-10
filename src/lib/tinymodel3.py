@@ -216,9 +216,7 @@ class Runtime:
     def _delay(self, ms) -> None:
         time.sleep(ms/1000)
 
-    def _input(self, prompt) -> str:
-        if not prompt is None:
-            self.print(prompt)
+    def _input(self) -> str:
         text = ""
         while True:
             if supervisor.ticks_ms()&0x100 == 0:
@@ -441,7 +439,9 @@ class Runtime:
     # INPUT A$
     #
     def input(self, prompt=None) -> str:
-        return self._input(prompt)
+        if not prompt is None:
+            self.print(prompt)
+        return self._input()
 
 
     #

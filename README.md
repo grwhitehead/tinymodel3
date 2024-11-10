@@ -25,7 +25,7 @@ Install the libraries:
 
 * Copy pybasic/lib/tinymodel3_pybasic to the lib dir
 
-Run the updated version of Trevor Flower's default code in 32 or 64 char mode:
+Run an updated version of Trevor Flower's default code in 32 or 64 char mode:
 
 * Copy src/default32-code.py or src/default64-code.py to code.py in the top-level dir
 

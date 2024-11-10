@@ -185,9 +185,7 @@ class Runtime:
             if SDL_GetTicks()-start >= ms:
                 break
 
-    def _input(self, prompt) -> str:
-        if not prompt is None:
-            self.print(prompt)
+    def _input(self) -> str:
         text = ""
         sdl2.ext.start_text_input()
         while self.running:
@@ -440,7 +438,9 @@ class Runtime:
     def input(self, prompt=None) -> str:
         if not self._keep_running():
             raise KeyboardInterrupt()
-        return self._input(prompt)
+        if not prompt is None:
+            self.print(prompt)
+        return self._input()
 
 
     #
