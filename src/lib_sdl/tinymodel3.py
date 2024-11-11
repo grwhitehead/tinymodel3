@@ -1,11 +1,13 @@
 #
 # Tiny TRS-80 Model III Emulation Library
 #
-# The Tiny TRS-80 Model III is a 1:6 scale model of the classic microcomputer made by Trevor Flowers
-# https://transmutable.com/work/electronic-tiny-trs-80-model-iii
+# The Tiny TRS-80 Model III is a 1:6 scale model of the classic microcomputer
+# made by Trevor Flowers
 #
-# This library provides scale accurate character and graphics rendering on the Tiny TRS-80 Model III's
-# display. Some day I might add a TRS-80 BASIC interpreter.
+#   https://transmutable.com/work/electronic-tiny-trs-80-model-iii
+#
+# This library provides scale accurate character and graphics rendering on
+# the Tiny TRS-80 Model III's display.
 #
 # MIT License
 # 

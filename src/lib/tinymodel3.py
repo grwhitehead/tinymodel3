@@ -1,11 +1,13 @@
 #
 # Tiny TRS-80 Model III Emulation Library
 #
-# The Tiny TRS-80 Model III is a 1:6 scale model of the classic microcomputer made by Trevor Flowers
-# https://transmutable.com/work/electronic-tiny-trs-80-model-iii
+# The Tiny TRS-80 Model III is a 1:6 scale model of the classic microcomputer
+# made by Trevor Flowers
 #
-# This library provides scale accurate character and graphics rendering on the Tiny TRS-80 Model III's
-# display. Some day I might add a TRS-80 BASIC interpreter.
+#   https://transmutable.com/work/electronic-tiny-trs-80-model-iii
+#
+# This library provides scale accurate character and graphics rendering on
+# the Tiny TRS-80 Model III's display.
 #
 # MIT License
 # 
@@ -185,7 +187,6 @@ class Runtime:
         )
 
     def _scroll(self) -> None:
-        #self.chars = self.chars[self.line_width:] + [0 for i in range(self.line_width)]
         for i in range(self.chars_len-self.line_width):
             self.chars[i] = self.chars[i+self.line_width]
         for i in range(self.chars_len-self.line_width,self.chars_len):
@@ -205,7 +206,6 @@ class Runtime:
 
     def _cls(self) -> None:
         self.chars_bitmap.fill(0)
-        #self.chars = [0 for i in range(self.chars_len)]
         for i in range(self.chars_len):
             self.chars[i] = 32
         self.cursor = 0
